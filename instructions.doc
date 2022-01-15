@@ -3,3 +3,45 @@ open terminal inside project and run npm install
 
 Run command gulp: to install gulpfile.js instructions 
 
+V.449
+in another terminal 
+
+Run composer init: To initialize composer.
+
+For the prompts select:
+
+Enter vendor and project name
+Enter description for the project
+in Minimum stability just press Enter
+in Typer enter: project
+For defining dependencies: Enter No
+For defining Dev dependencies: No
+confirm that all is correct
+
+then a composer.json file will appear
+
+now in this new file and below the line "type" : "project", we type:
+
+"autoload": {
+     "psr-4": {
+        "MVC\\":  "./",
+        "Controllers\\": "./controllers",
+        "Model\\": "./models"
+
+
+
+     }
+
+
+
+};
+
+Since we made changes, now we need yo run the command:
+composer update
+
+
+
+
+
+
+
